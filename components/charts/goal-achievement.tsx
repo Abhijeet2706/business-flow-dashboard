@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   Card,
@@ -8,10 +8,17 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { ChartSkeleton } from "@/components/ui/chart-skeleton";
-import { Progress } from "@/components/ui/progress";
 import { useLoading } from "@/hooks/use-loading";
 import { goalAchievementData } from "@/lib/data";
 import { useEffect, useState } from "react";
+import { Progress } from "@/components/ui/progress";
+
+const getProgressBackground = (percentage: number) => {
+  if (percentage >= 90) return "#10B981";
+  if (percentage >= 75) return "#3B82F6";
+  if (percentage >= 50) return "#F59E0B";
+  return "#EF4444";
+};
 
 export default function GoalAchievement() {
   const isLoading = useLoading({ delay: 800, minLoadingTime: 1150 });
@@ -69,14 +76,7 @@ export default function GoalAchievement() {
                 className="h-3 transition-all duration-1000 ease-out"
                 style={
                   {
-                    "--progress-background":
-                      goal.percentage >= 90
-                        ? "#10B981"
-                        : goal.percentage >= 75
-                          ? "#3B82F6"
-                          : goal.percentage >= 50
-                            ? "#F59E0B"
-                            : "#EF4444",
+                    "--progress-background": getProgressBackground(goal.percentage),
                   } as React.CSSProperties
                 }
               />

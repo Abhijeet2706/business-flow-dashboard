@@ -71,20 +71,26 @@ export const performanceRadarData = [
 ];
 
 export const productCategoriesData = [
-  { name: 'Electronics', value: 45000, children: [
-    { name: 'Smartphones', value: 25000 },
-    { name: 'Laptops', value: 15000 },
-    { name: 'Accessories', value: 5000 }
-  ]},
-  { name: 'Clothing', value: 32000, children: [
-    { name: 'Men\'s Wear', value: 18000 },
-    { name: 'Women\'s Wear', value: 14000 }
-  ]},
-  { name: 'Home & Garden', value: 28000, children: [
-    { name: 'Furniture', value: 16000 },
-    { name: 'Decor', value: 8000 },
-    { name: 'Garden', value: 4000 }
-  ]},
+  {
+    name: 'Electronics', value: 45000, children: [
+      { name: 'Smartphones', value: 25000 },
+      { name: 'Laptops', value: 15000 },
+      { name: 'Accessories', value: 5000 }
+    ]
+  },
+  {
+    name: 'Clothing', value: 32000, children: [
+      { name: 'Men\'s Wear', value: 18000 },
+      { name: 'Women\'s Wear', value: 14000 }
+    ]
+  },
+  {
+    name: 'Home & Garden', value: 28000, children: [
+      { name: 'Furniture', value: 16000 },
+      { name: 'Decor', value: 8000 },
+      { name: 'Garden', value: 4000 }
+    ]
+  },
   { name: 'Sports', value: 15000 },
 ];
 
@@ -102,6 +108,7 @@ export const goalAchievementData = [
   { goal: 'Market Share', current: 32, target: 35, percentage: 91 },
   { goal: 'Customer Satisfaction', current: 4.6, target: 4.8, percentage: 96 },
 ];
+
 
 export const monthlyExpensesData = [
   { category: 'Salaries', jan: 45000, feb: 46000, mar: 47000, apr: 48000 },

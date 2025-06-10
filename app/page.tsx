@@ -10,7 +10,7 @@ import RevenueChart from "@/components/charts/revenue-chart";
 import SalesMarketingScatter from "@/components/charts/sales-marketing-scatter";
 import TrafficChart from "@/components/charts/traffic-chart";
 import StatsCards from "@/components/dashboard/stats-cards";
-//import GoalAchievement from "@/components/charts/goal-achievement";
+import GoalAchievement from "@/components/charts/goal-achievement";
 import SalesGrowthChart from "@/components/charts/sales-growth-chart"
 
 
@@ -49,7 +49,7 @@ export default function Dashboard() {
 
           {/* Row 3 */}
           <SalesGrowthChart />
-          {/* <GoalAchievement /> */}
+          <GoalAchievement />
 
           {/* Row 4 */}
           <SalesMarketingScatter />
