@@ -11,23 +11,10 @@ import { ChartSkeleton } from "@/components/ui/chart-skeleton";
 import { useLoading } from "@/hooks/use-loading";
 import { goalAchievementData } from "@/lib/data";
 import { useEffect, useState } from "react";
+import SimpleProgress from "../ui/progress";
 
 
 
-// Simple progress bar
-function SimpleProgress({ value, color }: { value: number; color: string }) {
-  return (
-    <div className="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
-      <div
-        className="h-full transition-all duration-1000 ease-out"
-        style={{
-          width: `${value}%`,
-          backgroundColor: color,
-        }}
-      />
-    </div>
-  );
-}
 
 // Determine color based on progress
 function getColor(percentage: number) {
