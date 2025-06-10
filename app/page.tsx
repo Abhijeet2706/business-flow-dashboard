@@ -11,7 +11,7 @@ import SalesMarketingScatter from "@/components/charts/sales-marketing-scatter";
 import TrafficChart from "@/components/charts/traffic-chart";
 import StatsCards from "@/components/dashboard/stats-cards";
 import GoalAchievement from "@/components/charts/goal-achievement";
-import SalesGrowthChart from "@/components/charts/sales-growth-chart"
+import SalesGrowthChart from "@/components/charts/sales-growth-chart";
 
 
 
