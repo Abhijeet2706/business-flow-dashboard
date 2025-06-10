@@ -10,7 +10,7 @@ A modern, responsive business analytics dashboard built with **Next.js** and **T
 
 ### Core Features
 
-- **8 Unique Chart Types**: Bar, Line, Area, Pie, Donut, Scatter, Radar, Progress, Composed charts, and more
+- **10+ Unique Chart Types**: Bar, Line, Area, Pie, Donut, Scatter, Radar, Progress, Composed charts, and more
 - **Fully Responsive Design**: Optimized for desktop, tablet, and mobile devices
 - **Theme Switcher**: Light, dark, and system-based theme support
 - **Interactive Charts**: Hover effects, tooltips, and click actions
@@ -22,12 +22,14 @@ A modern, responsive business analytics dashboard built with **Next.js** and **T
 1. **Overview Stats Cards**: Revenue, customers, orders, conversion rate
 2. **Revenue Analysis**: Monthly revenue vs targets
 3. **Website Traffic**: Visits and pageview analytics
-4. **Market Share**: Competitive positioning
-5. **Customer Satisfaction**: Feedback distribution
-6. **Sales vs Marketing**: ROI correlation analysis
-7. **Performance Radar**: Multi-dimensional business metrics
-8. **Expense Breakdown**: Monthly spending by category
-9. **Customer Retention**: New vs returning customer analysis
+4. **Sales Growth**: Quarterly performance trends
+5. **Market Share**: Competitive positioning
+6. **Customer Satisfaction**: Feedback distribution
+7. **Sales vs Marketing**: ROI correlation analysis
+8. **Performance Radar**: Multi-dimensional business metrics
+9. **Goal Achievement**: Progress tracking with visual indicators
+10. **Expense Breakdown**: Monthly spending by category
+11. **Customer Retention**: New vs returning customer analysis
 
 ## 🛠 Technology Stack
 
@@ -36,6 +38,7 @@ A modern, responsive business analytics dashboard built with **Next.js** and **T
 - **Next.js 15** - React framework with App Router
 - **TypeScript** - Type-safe JavaScript
 - **Tailwind CSS** - Utility-first CSS framework
+- **Dynamic Imports with Fallback** - Used for performance optimization and to handle non-critical component loading gracefully (eg., charts and heavy UI blocks)
 
 ### UI Components
 
@@ -85,6 +88,7 @@ The dashboard uses **static mock data** located in `/lib/data.ts`. This includes
 - **Bundle Optimization**: Tree shaking and code splitting
 - **CSS Purging**: Unused styles removed in production
 - **Lazy Loading**: Components loaded on demand
+
 
 ## 🚀 Getting Started
 
