@@ -1,6 +1,5 @@
 "use client";
 
-import dynamic from "next/dynamic";
 
 import CustomerRetention from "@/components/charts/customer-retention";
 import CustomerSatisfactionChart from "@/components/charts/customer-satisfaction-chart";
@@ -14,22 +13,7 @@ import StatsCards from "@/components/dashboard/stats-cards";
 import GoalAchievement from "@/components/charts/goal-achievement";
 import SalesGrowthChart from "@/components/charts/sales-growth-chart"
 
-// ✅ Dynamic import with SSR disabled (important for "use client" components)
-const GoalAchievements = dynamic(
-  () => import("@/components/charts/goal-achievement"),
-  {
-    ssr: false,
-    loading: () => <p>Loading Goal Achievement Chart...</p>, // optional fallback
-  }
-);
 
-const SalesGrowthCharts = dynamic(
-  () => import("@/components/charts/sales-growth-chart"),
-  {
-    ssr: false,
-    loading: () => <p>Loading Goal Achievement Chart...</p>, // optional fallback
-  }
-);
 
 export default function Dashboard() {
   return (

@@ -75,7 +75,7 @@ export default function SalesGrowthChart() {
               />
               <Tooltip
                 formatter={(value: any) => [
-                  `$${value.toLocaleString()}`,
+                  `$${Number(value).toLocaleString()}`,
                   "Sales",
                 ]}
                 labelStyle={{ color: "var(--foreground)" }}

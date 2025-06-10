@@ -73,10 +73,10 @@ export default function GoalAchievement() {
                       goal.percentage >= 90
                         ? "#10B981"
                         : goal.percentage >= 75
-                        ? "#3B82F6"
-                        : goal.percentage >= 50
-                        ? "#F59E0B"
-                        : "#EF4444",
+                          ? "#3B82F6"
+                          : goal.percentage >= 50
+                            ? "#F59E0B"
+                            : "#EF4444",
                   } as React.CSSProperties
                 }
               />
